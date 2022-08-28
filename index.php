@@ -13,6 +13,7 @@ $googleSiteKey = $_ENV['GOOGLE_SITE_KEY']; ?>
         <script type="application/javascript">
             const googleSiteKey = '<?= $googleSiteKey ?>';
         </script>
+        <script type="application/javascript" src="./script/recaptcha.js"></script>
         <script type="application/javascript" src="./script/main.js"></script>
         <link rel="stylesheet" href="./style/main.css">
     </head>

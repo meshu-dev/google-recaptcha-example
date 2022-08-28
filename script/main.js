@@ -1,12 +1,7 @@
-let captchaToken = '';
+let reCaptcha;
 
-grecaptcha.ready(() => {
-  grecaptcha.execute(
-    googleSiteKey,
-    { action: 'homepage' }
-  ).then((token) => {
-    captchaToken = token;
-  });
+window.addEventListener('DOMContentLoaded', (event) => {
+  reCaptcha = new ReCaptcha(grecaptcha, googleSiteKey);
 });
 
 const getFormParams = () => {
@@ -14,7 +9,7 @@ const getFormParams = () => {
 
   const formData = new FormData();
   formData.append('message', message);
-  formData.append('token', captchaToken);
+  formData.append('token', reCaptcha.token);
 
   return formData;
 };
