@@ -1,0 +1,11 @@
+textarea {
+    display: block;
+    min-width: 600px;
+    min-height: 200px;
+    resize: none;
+}
+
+input[type="submit"] {
+    margin-top: 10px;
+    cursor: pointer;
+}

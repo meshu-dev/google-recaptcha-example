@@ -1,0 +1,7 @@
+{
+  "name": "google-recaptcha-example",
+  "description": "Google Recaptcha example dependancies.",
+  "require": {
+    "guzzlehttp/guzzle": "^7.4.5"
+  }
+}
