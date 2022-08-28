@@ -1,11 +1,14 @@
 <?php
-$googleSiteKey = ''; ?>
+require __DIR__ . '/init.php'; ?>
 <!DOCTYPE html>
 <html>
     <head>
         <title>Google reCaptcha Example</title>
         <script type="application/javascript"
                 src="https://www.google.com/recaptcha/api.js?render=<?= $googleSiteKey ?>">
+        </script>
+        <script ype="application/javascript">
+            const googleSiteKey = '<?= $googleSiteKey ?>';
         </script>
         <script type="application/javascript" src="./script/main.js"></script>
         <link rel="stylesheet" href="./style/main.css">

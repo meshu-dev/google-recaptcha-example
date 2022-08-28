@@ -1,8 +1,9 @@
+/*
 grecaptcha.ready(function() {
   grecaptcha.execute(
-    'Enter google site key here',
+    googleSiteKey,
     { action: 'homepage' }
   ).then(function(token) {
     // pass the token to the backend script for verification
   });
-});
+}); */

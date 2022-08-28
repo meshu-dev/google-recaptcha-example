@@ -1,7 +1,12 @@
 {
-  "name": "google-recaptcha-example",
-  "description": "Google Recaptcha example dependancies.",
-  "require": {
-    "guzzlehttp/guzzle": "^7.4.5"
-  }
+    "require": {
+        "guzzlehttp/guzzle": "^7.4",
+        "vlucas/phpdotenv": "^5.4"
+    },
+    "scripts": {
+        "dev": "php -S localhost:8000"
+    },
+    "require-dev": {
+        "symfony/var-dumper": "^6.1"
+    }
 }
