@@ -1,18 +1,19 @@
 # Google Recaptcha Example
 
-A prototype app of a form submission which uses Google reCAPTCHA v3.
+A prototype app of a simple website form which uses Google reCAPTCHA v3.
 
-Reference: [reCaptcha V3](https://developers.google.com/recaptcha/docs/v3).
+Google documentation: [reCaptcha V3](https://developers.google.com/recaptcha/docs/v3)
 
 ## Prerequisites
 
-The example app I created was developed with PHP 8.1.9 which was installed via [chocolatey](https://chocolatey.org).
+App was developed with PHP 8.1.9, installed via [chocolatey](https://chocolatey.org).
 
-A Google Site key and secret key are both required in order to use reCaptcha V3.
+Both Google site and secret keys are required in order to use reCaptcha V3.
 
-- Go to [Google reCAPTCHA Admin](https://www.google.com/recaptcha/admin).
-- Login in via a Google account.
-- Create a site, after creation the site and secret keys will be available for you.
+- Go to [Google reCAPTCHA Admin](https://www.google.com/recaptcha/admin)
+- Login in via a Google account
+- Add a new site
+- Site and secret keys are generated
 
 ## Setup
 
@@ -22,7 +23,7 @@ Install dependancies.
 composer install
 ```
 
-Copy .env-example to .env and add in site and secret keys
+Copy .env-example to .env and add in both Google keys
 
 ```
 cp .env-example .env
